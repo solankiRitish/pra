@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Weather";
+}
+<div class="container">
+    <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <input class="city-input" type="text" placeholder="E.g. : Rajkot , Ahmedabad , Gandhinagar">
+        <asp:LinkButton class="search-btn">Search</asp:LinkButton>
+        <div class="separator mt-3 mb-3"></div>
+        <asp:LinkButton class="location-btn">Use Current Location</asp:LinkButton>
+
+    </div>
+
+    <div class="weather-data">
+        <h2>Current weather</h2>
+        <div class="current-weather">
+            <div class="details">
+                <h2>_______ ( ______ )</h2>
+                <h6>Temperature: __°C</h6>
+                <h6>Wind: __ M/S</h6>
+                <h6>Humidity: __%</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="fiveday-forecast">
+        <div class="days-forecast">
+            <h2>5-Day Forecast</h2>
+            <ul class="weather-cards">
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/Weather.js"></script>

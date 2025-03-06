@@ -1,48 +1,155 @@
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-bddmc6yalx] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+body[b-bddmc6yalx] {
+    background-color: #f9fafb;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
 }
 
-a[b-bddmc6yalx] {
-  color: #0077cc;
+/* Sidebar styles */
+.sidebar[b-bddmc6yalx] {
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary[b-bddmc6yalx] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    .sidebar .logo[b-bddmc6yalx] {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .sidebar .logo img[b-bddmc6yalx] {
+            width: 230px;
+        }
+
+    .sidebar ul[b-bddmc6yalx] {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar li[b-bddmc6yalx] {
+        margin-bottom: 10px;
+    }
+
+    .sidebar a[b-bddmc6yalx] {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .sidebar a.active[b-bddmc6yalx] {
+            background-color: #d4edda; /* Light green background */
+            color: #155724; /* Dark green text */
+        }
+
+        .sidebar a:hover[b-bddmc6yalx] {
+            background-color: #d4edda; /* Light green background on hover */
+            color: #155724; /* Dark green text */
+        }
+
+        .sidebar a i[b-bddmc6yalx] {
+            margin-right: 10px;
+        }
+
+    .sidebar .submenu[b-bddmc6yalx] {
+        padding-left: 20px;
+        display: none;
+    }
+
+        .sidebar .submenu.show[b-bddmc6yalx] {
+            display: block;
+        }
+
+/* Content styles */
+.content[b-bddmc6yalx] {
+    margin-left: 270px;
+    padding: 20px;
 }
 
-.nav-pills .nav-link.active[b-bddmc6yalx], .nav-pills .show > .nav-link[b-bddmc6yalx] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.header[b-bddmc6yalx] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
-.border-top[b-bddmc6yalx] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-bddmc6yalx] {
-  border-bottom: 1px solid #e5e5e5;
+    .header .profile[b-bddmc6yalx] {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header h4[b-bddmc6yalx] {
+        margin-left: 10px;
+    }
+
+/* Card styles */
+.card[b-bddmc6yalx] {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.box-shadow[b-bddmc6yalx] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    .card img[b-bddmc6yalx] {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card .card-body[b-bddmc6yalx] {
+        font-size: 14px;
+    }
+
+.card-title[b-bddmc6yalx] {
+    font-size: 18px;
+    font-weight: 600;
 }
 
-button.accept-policy[b-bddmc6yalx] {
-  font-size: 1rem;
-  line-height: inherit;
+.text-muted[b-bddmc6yalx] {
+    font-size: 12px;
 }
 
-.footer[b-bddmc6yalx] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+
+/* Profile hover color */
+.profile-item:hover[b-bddmc6yalx] {
+    background-color: lightgreen;
+    color: white; /* Optional: changes text color to white */
 }
+
+/* Logout button - default black, turns red on hover */
+.logout-item[b-bddmc6yalx] {
+    color: black !important; /* Default black text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+    .logout-item:hover[b-bddmc6yalx] {
+        color: red !important; /* Turns red on hover */
+    }
+
+/* Smooth transition for hover effects */
+.profile-item[b-bddmc6yalx] {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submenu[b-bddmc6yalx] {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+    .submenu.show[b-bddmc6yalx] {
+        display: block;
+    }

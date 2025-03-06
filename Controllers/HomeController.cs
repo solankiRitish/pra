@@ -18,7 +18,27 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Weather()
+        {
+            return View();
+        }
+
+        public IActionResult Farmer()
+        {
+            return View();
+        }
+
+        public IActionResult Driver()
+        {
+            return View();
+        }
+
+        public IActionResult Seller()
+        {
+            return View();
+        }
+
+        public IActionResult Buyer()
         {
             return View();
         }

@@ -1,6 +1,8 @@
+wwwroot\css\layout.css
 wwwroot\css\site.css
+wwwroot\css\Weather.css
 wwwroot\favicon.ico
-wwwroot\js\site.js
+wwwroot\js\Weather.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
