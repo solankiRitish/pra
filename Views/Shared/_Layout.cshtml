@@ -23,47 +23,42 @@
             </div>
             <ul>
                 <li>
-                    <a href="#" class="active" id="krishiBazarLink"><i class="bi bi-shop"></i> Krishi Bazar</a>
+                    <a href="#" id="krishiBazarLink"><i class="bi bi-shop"></i> Krishi Bazar</a>
                     <ul class="submenu" id="krishiBazarSubmenu">
-                        <li><a asp-controller="Home" asp-action="Farmer"><i class="bi bi-person"></i> Farmer</a></li>
-                        <li><a asp-controller="Home" asp-action="Driver"><i class="bi bi-truck"></i> Driver</a></li>
-                        <li><a asp-controller="Home" asp-action="Seller"><i class="bi bi-shop"></i> Seller</a></li>
-                        <li><a asp-controller="Home" asp-action="Buyer"><i class="bi bi-basket"></i> Buyer</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Farmer" class="submenu-item"><i class="bi bi-person"></i> Farmer</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Driver" class="submenu-item"><i class="bi bi-truck"></i> Driver</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Seller" class="submenu-item"><i class="bi bi-shop"></i> Seller</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Buyer" class="submenu-item"><i class="bi bi-basket"></i> Buyer</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="#" id="krishiPostsLink"><i class="bi bi-file-post"></i> Krishi Posts</a>
                     <ul class="submenu" id="krishiPostsSubmenu">
-                        <li><a asp-area="" asp-controller="Home" asp-action="#"><i class="bi bi-person"></i> Farmer Posts</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#"><i class="bi bi-truck"></i> Driver Posts</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#"><i class="bi bi-shop"></i> Seller Posts</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#"><i class="bi bi-basket"></i> Buyer Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-person"></i> Farmer Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-truck"></i> Driver Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-shop"></i> Seller Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-basket"></i> Buyer Posts</a></li>
+
                     </ul>
                 </li>
+
                 <li>
                     <a asp-area="" asp-controller="Home" asp-action="Weather"><i class="bi bi-cloud-sun"></i> Weather</a>
-                    
                 </li>
             </ul>
         </div>
-
-        
     </header>
 
     <!-- Main Content -->
     <div class="content">
-        <!-- Header -->
         <div class="header d-flex justify-content-end align-items-center p-2 bg-light">
             <div class="profile dropdown">
-                <img src="/image/user.jpg"
-                     alt="User"
-                     class="rounded-circle"
+                <img src="/image/user.jpg" alt="User" class="rounded-circle"
                      style="width: 50px; height: 50px; cursor: pointer;"
-                     data-bs-toggle="dropdown"
-                     aria-expanded="false">
+                     data-bs-toggle="dropdown" aria-expanded="false">
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item profile-item" href="/Profile.aspx"><i class="bi bi-person-circle me-2"></i>Profile</a></li>
+                    <li><a class="dropdown-item profile-item" href="/Profile"><i class="bi bi-person-circle me-2"></i>Profile</a></li>
                     <li>
                         <a class="dropdown-item logout-item text-black" href="#" onclick="openLogoutModal()">
                             <i class="bi bi-box-arrow-right"></i> Logout
@@ -73,7 +68,6 @@
             </div>
         </div>
 
-        <!-- Main Section -->
         <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
@@ -86,17 +80,9 @@
                 &copy; 2025 - Krishi Bazar - <a href="#">Privacy</a>
             </div>
         </footer>
-
     </div>
 
-      
-
-       
-
- 
-
-
-    <!-- Logout Confirmation Modal -->
+    <!-- Logout Modal -->
     <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -104,9 +90,7 @@
                     <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    Are you sure you want to log out?
-                </div>
+                <div class="modal-body">Are you sure you want to log out?</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <a href="logout_loding.aspx" class="btn btn-outline-danger">Logout</a>
@@ -115,35 +99,79 @@
         </div>
     </div>
 
-   
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
+    <!-- JavaScript -->
     <script>
-        function openLogoutModal() {
-            var logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
-            logoutModal.show();
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to toggle submenus
+            function toggleSubMenu(mainLinkId, submenuId) {
+                const mainLink = document.getElementById(mainLinkId);
+                const submenu = document.getElementById(submenuId);
 
-        const sidebarLinks = document.querySelectorAll('.sidebar a');
+                if (mainLink && submenu) {
+                    if (localStorage.getItem(submenuId) === "open") {
+                        submenu.classList.add("show");
+                    }
 
-        sidebarLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                sidebarLinks.forEach(item => item.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
+                    mainLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        submenu.classList.toggle("show");
 
-        document.getElementById("krishiBazarLink").addEventListener("click", function () {
-            const submenu = document.getElementById("krishiBazarSubmenu");
-            submenu.classList.toggle("show");
-        });
+                        if (submenu.classList.contains("show")) {
+                            localStorage.setItem(submenuId, "open");
+                        } else {
+                            localStorage.removeItem(submenuId);
+                        }
+                    });
+                }
+            }
 
-        document.getElementById("krishiPostsLink").addEventListener("click", function () {
-            const submenu = document.getElementById("krishiPostsSubmenu");
-            submenu.classList.toggle("show");
+            // Function to handle active menu highlighting
+            function handleActiveMenu() {
+                const sidebarLinks = document.querySelectorAll(".sidebar a");
+                const submenuLinks = document.querySelectorAll(".submenu a");
+
+                function clearActiveClasses() {
+                    sidebarLinks.forEach(link => link.classList.remove("active"));
+                }
+
+                const activeLink = localStorage.getItem("activeLink");
+                if (activeLink) {
+                    const activeElement = document.querySelector(`.sidebar a[href="${activeLink}"]`);
+                    if (activeElement) {
+                        activeElement.classList.add("active");
+
+                        const parentSubmenu = activeElement.closest(".submenu");
+                        if (parentSubmenu) {
+                            parentSubmenu.classList.add("show");
+                            localStorage.setItem(parentSubmenu.id, "open");
+                        }
+                    }
+                }
+
+                submenuLinks.forEach(link => {
+                    link.addEventListener("click", function () {
+                        clearActiveClasses();
+                        this.classList.add("active");
+                        localStorage.setItem("activeLink", this.getAttribute("href"));
+                    });
+                });
+
+                // Ensure main menus are not highlighted when a submenu item is clicked
+                const mainMenuLinks = document.querySelectorAll(".sidebar > ul > li > a");
+                mainMenuLinks.forEach(link => {
+                    link.addEventListener("click", function () {
+                        localStorage.removeItem("activeLink");
+                    });
+                });
+            }
+
+            // Initialize functions
+            toggleSubMenu("krishiBazarLink", "krishiBazarSubmenu");
+            toggleSubMenu("krishiPostsLink", "krishiPostsSubmenu");
+            handleActiveMenu();
         });
     </script>
 

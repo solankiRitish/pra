@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "E:\\pra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\home\\farmer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\home\\farmer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\home\\buyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\home\\buyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\home\\seller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\home\\seller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\home\\weather.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\home\\weather.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|e:\\pra\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{94FAFA5F-2C90-48CA-9D42-A2437B2BB4B5}|WebApplication1.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,38 +45,12 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WebApplication1",
-              "DocumentMoniker": "E:\\pra\\WebApplication1.csproj",
-              "RelativeDocumentMoniker": "WebApplication1.csproj",
-              "ToolTip": "E:\\pra\\WebApplication1.csproj",
-              "RelativeToolTip": "WebApplication1.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-06T05:10:51.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\pra\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\pra\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T06:03:12.551Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -98,70 +60,61 @@
               "RelativeDocumentMoniker": "Views\\Home\\Farmer.cshtml",
               "ToolTip": "E:\\pra\\Views\\Home\\Farmer.cshtml",
               "RelativeToolTip": "Views\\Home\\Farmer.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAKkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T06:01:49.038Z",
+              "WhenOpened": "2025-03-06T05:36:07.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\pra\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\pra\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:53:49.469Z"
+              "DocumentIndex": 2,
+              "Title": "Buyer.cshtml",
+              "DocumentMoniker": "E:\\pra\\Views\\Home\\Buyer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Buyer.cshtml",
+              "ToolTip": "E:\\pra\\Views\\Home\\Buyer.cshtml",
+              "RelativeToolTip": "Views\\Home\\Buyer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T05:36:04.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "E:\\pra\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "E:\\pra\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABkAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Seller.cshtml",
+              "DocumentMoniker": "E:\\pra\\Views\\Home\\Seller.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Seller.cshtml",
+              "ToolTip": "E:\\pra\\Views\\Home\\Seller.cshtml",
+              "RelativeToolTip": "Views\\Home\\Seller.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T05:14:17.211Z"
+              "WhenOpened": "2025-03-06T05:35:45.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Weather.cshtml",
-              "DocumentMoniker": "E:\\pra\\Views\\Home\\Weather.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Weather.cshtml",
-              "ToolTip": "E:\\pra\\Views\\Home\\Weather.cshtml",
-              "RelativeToolTip": "Views\\Home\\Weather.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\pra\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\pra\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBkAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T05:05:29.701Z"
+              "WhenOpened": "2025-03-06T05:35:14.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\pra\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "E:\\pra\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:05:12.482Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\pra\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "E:\\pra\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T04:41:57.331Z",
+              "WhenOpened": "2025-03-06T05:35:10.067Z",
               "EditorCaption": ""
             }
           ]
