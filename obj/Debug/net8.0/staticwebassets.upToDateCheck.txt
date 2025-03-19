@@ -1,7 +1,17 @@
 wwwroot\css\layout.css
-wwwroot\css\site.css
+wwwroot\css\posts_table.css
+wwwroot\css\Table.css
 wwwroot\css\Weather.css
 wwwroot\favicon.ico
+wwwroot\image\bus-driver.png
+wwwroot\image\buyer (1).png
+wwwroot\image\image(2).jpg
+wwwroot\image\images (1).jpg
+wwwroot\image\location.png
+wwwroot\image\main-logo.png
+wwwroot\image\seller.png
+wwwroot\image\tea.png
+wwwroot\image\user.jpg
 wwwroot\js\Weather.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -1,0 +1,199 @@
+﻿@{
+    ViewData["Title"] = "Seller Post Table";
+}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <h4 class="card-header pb-0 text-md-start text-center">Seller Posts</h4>
+            <button type="button" class="btn btn-add" data-bs-toggle="modal" data-bs-target="#addSellerPostModal">
+                <i class="bi bi-plus-lg"></i>Add Seller Post
+            </button>
+        </div>
+        <div class="card-datatable text-nowrap">
+            <div class="p-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search Seller Posts..." onkeyup="searchTable()">
+            </div>
+            <div class="table-responsive p-3">
+                <table class="table table-bordered table-striped" id="SellerPostsTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Location</th>
+                            <th>Image</th>
+                            <th>Area of Work</th>
+                            <th>Price by Bigha</th>
+                            <th>Work Time</th>
+                            <th>Posted On</th>
+                            <th>Status</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Wheat Field</td>
+                            <td>Gujarat, India</td>
+                            <td><img src="/image/images (1).jpg" alt="Farm Image" width="300" object-fit cover;></td>
+                            <td>10 Acres</td>
+                            <td>5000</td>
+                            <td>11:00 AM to 07:00 PM</td>
+                            <td>2024-11-12 12:38:26</td>
+                            <td><span class="badge bg-success">ACTIVE</span></td>
+                            <td class="limited-text">Farming work related to wheat cultivation and harvesting process is important</td>
+                            <td>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editSellerPostModal" onclick="editPost(1)"><i class="bi bi-pencil-square"></i>Edit</button>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteSellerPostModal" onclick="confirmDelete(1)"><i class="bi bi-trash"></i>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Adding Seller Post -->
+<div class="modal fade" id="addSellerPostModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Seller Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Title</label>
+                        <input type="text" class="form-control" placeholder="Enter post title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Location</label>
+                        <input type="text" class="form-control" id="location" value="" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Image</label>
+                        <input type="file" class="form-control" accept="image/*">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Area of Work</label>
+                        <input type="text" class="form-control" placeholder="e.g., 10 Acres" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price</label>
+                        <input type="text" class="form-control" placeholder="$5000" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Work Timing</label>
+                        <input type="text" class="form-control" placeholder="8 AM - 5 PM" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" rows="3" placeholder="Briefly describe the farming work"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn custom-btn">Save Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal for Seller Post -->
+<div class="modal fade" id="editSellerPostModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Seller Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editPostForm">
+                    <input type="hidden" id="editPostId">
+                    <div class="mb-3">
+                        <label for="editPostTitle" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="editPostTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Image</label>
+                        <input type="file" class="form-control" accept="image/*">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editAreaOfWork" class="form-label">Area of Work</label>
+                        <input type="text" class="form-control" id="editAreaOfWork" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editPrice" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="editPrice" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editWorkTiming" class="form-label">Work Timing</label>
+                        <input type="text" class="form-control" id="editWorkTiming" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="editDescription" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editStatus" class="form-label">Status</label>
+                        <select class="form-select" id="editStatus">
+                            <option value="Active">Active</option>
+                            <option value="Busy">Busy</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn custom-btn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal for Seller Post -->
+<div class="modal fade" id="deleteSellerPostModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Delete Seller Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this post?</p>
+                <input type="hidden" id="deletePostId">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" onclick="deletePost()">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function searchTable() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let rows = document.querySelectorAll("#SellerPostsTable tbody tr");
+        rows.forEach(row => {
+            let text = row.innerText.toLowerCase();
+            row.style.display = text.includes(input) ? "" : "none";
+        });
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".limited-text").forEach(el => {
+                let words = el.innerText.trim().split(/\s+/); // Split by spaces
+                let newContent = [];
+
+                for (let i = 0; i < words.length; i += 5) {
+                    newContent.push(words.slice(i, i + 5).join(" ")); // Group 5 words together
+                }
+
+                el.innerHTML = newContent.join("<br>"); // Join with <br> for new lines
+            });
+        });
+</script>

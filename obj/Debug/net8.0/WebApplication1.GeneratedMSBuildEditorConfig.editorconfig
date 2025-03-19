@@ -32,8 +32,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXllci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/pra/Views/Home/Buyer_Posts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXllcl9Qb3N0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/pra/Views/Home/Driver.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEcml2ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/pra/Views/Home/Driver_Posts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEcml2ZXJfUG9zdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/pra/Views/Home/Famer_Posts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYW1lcl9Qb3N0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/pra/Views/Home/Farmer.cshtml]
@@ -46,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/pra/Views/Home/Seller.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWxsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/pra/Views/Home/Seller_Posts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWxsZXJfUG9zdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/pra/Views/Home/Weather.cshtml]

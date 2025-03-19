@@ -35,10 +35,10 @@
                 <li>
                     <a href="#" id="krishiPostsLink"><i class="bi bi-file-post"></i> Krishi Posts</a>
                     <ul class="submenu" id="krishiPostsSubmenu">
-                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-person"></i> Farmer Posts</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-truck"></i> Driver Posts</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-shop"></i> Seller Posts</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="#" class="submenu-item"><i class="bi bi-basket"></i> Buyer Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Famer_Posts" class="submenu-item"><i class="bi bi-person"></i> Farmer Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Driver_Posts" class="submenu-item"><i class="bi bi-truck"></i> Driver Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Seller_Posts" class="submenu-item"><i class="bi bi-shop"></i> Seller Posts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Buyer_Posts" class="submenu-item"><i class="bi bi-basket"></i> Buyer Posts</a></li>
 
                     </ul>
                 </li>
@@ -68,16 +68,16 @@
             </div>
         </div>
 
-        <div class="container">
-            <main role="main" class="pb-3">
+        <div >
+            <main role="main">
                 @RenderBody()
             </main>
         </div>
-
+        <br />
         <!-- Footer -->
         <footer class="border-top footer text-muted">
             <div class="container">
-                &copy; 2025 - Krishi Bazar - <a href="#">Privacy</a>
+                &copy; 2025 - Krishi Bazar 
             </div>
         </footer>
     </div>
