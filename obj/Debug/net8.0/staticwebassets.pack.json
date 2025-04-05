@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\WebApplication1.1zwnydebup.bundle.scp.css"
     },
     {
+      "Id": "E:\\pra\\wwwroot\\css\\Login_OR_Register.css",
+      "PackagePath": "staticwebassets\\css\\Login_OR_Register.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\css\\Main.css",
+      "PackagePath": "staticwebassets\\css\\Main.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\css\\Table.css",
+      "PackagePath": "staticwebassets\\css\\Table.css"
+    },
+    {
       "Id": "E:\\pra\\wwwroot\\css\\Weather.css",
       "PackagePath": "staticwebassets\\css\\Weather.css"
     },
@@ -13,16 +25,60 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
-      "Id": "E:\\pra\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "E:\\pra\\wwwroot\\css\\posts_table.css",
+      "PackagePath": "staticwebassets\\css\\posts_table.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
       "Id": "E:\\pra\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\pra\\wwwroot\\image\\bus-driver.png",
+      "PackagePath": "staticwebassets\\image\\bus-driver.png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\buyer (1).png",
+      "PackagePath": "staticwebassets\\image\\buyer (1).png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\image(2).jpg",
+      "PackagePath": "staticwebassets\\image\\image(2).jpg"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\images (1).jpg",
+      "PackagePath": "staticwebassets\\image\\images (1).jpg"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\location.png",
+      "PackagePath": "staticwebassets\\image\\location.png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\main-logo.png",
+      "PackagePath": "staticwebassets\\image\\main-logo.png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\seller.png",
+      "PackagePath": "staticwebassets\\image\\seller.png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\tea.png",
+      "PackagePath": "staticwebassets\\image\\tea.png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\user.jpg",
+      "PackagePath": "staticwebassets\\image\\user.jpg"
+    },
+    {
       "Id": "E:\\pra\\wwwroot\\js\\Weather.js",
       "PackagePath": "staticwebassets\\js\\Weather.js"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -91,6 +147,22 @@
     {
       "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",

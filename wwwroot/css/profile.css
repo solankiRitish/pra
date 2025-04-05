@@ -1,0 +1,318 @@
+﻿
+body {
+    background-color: #f9fafb;
+    font-family: 'Arial', sans-serif;
+    overflow: scroll;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+    .sidebar .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .sidebar .logo img {
+            width: 230px;
+        }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .sidebar a.active {
+            background-color: #d4edda; /* Light green background */
+            color: #155724; /* Dark green text */
+        }
+
+        .sidebar a:hover {
+            background-color: #d4edda; /* Light green background on hover */
+            color: #155724; /* Dark green text */
+        }
+
+        .sidebar a i {
+            margin-right: 10px;
+        }
+
+    .sidebar .submenu {
+        padding-left: 20px;
+        display: none;
+    }
+
+        .sidebar .submenu.show {
+            display: block;
+        }
+
+/* Content styles */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+    .header .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header h4 {
+        margin-left: 10px;
+    }
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card .card-body {
+        font-size: 14px;
+    }
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+
+
+/* Profile hover color */
+.profile-item:hover {
+    background-color: lightgreen;
+    color: white; /* Optional: changes text color to white */
+}
+
+/* Logout button - default black, turns red on hover */
+.header .logout-item {
+    color: black !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    background-color: transparent !important;
+}
+
+    .header .logout-item:hover {
+        color: red !important;
+        background-color: transparent !important;
+    }
+
+/* Smooth transition for hover effects */
+.profile-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+    .submenu.show {
+        display: block;
+    }
+
+
+.profile-card {
+    width: contain;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-header {
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-outline-secondary {
+    background-color: white;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+    .form-control:focus {
+        border-color: #28a745;
+        outline: none;
+    }
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+    .checkbox-group label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .checkbox-group input {
+        width: 18px;
+        height: 18px;
+        accent-color: #28a745;
+    }
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 20px;
+    }
+}
+
+
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+    .header .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header h4 {
+        margin-left: 10px;
+    }
+
+
+.custom-checkbox:checked {
+    background-color: limegreen !important;
+    border-color: limegreen !important;
+}
+
+

@@ -1,0 +1,275 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Profile";
+}
+<!DOCTYPE html>
+<head runat="server">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="/css/profile.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+    <!-- Custom JS -->
+    <script src="/js/weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title></title>
+    
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/image/main-logo.png" alt="Krishi Bazar Logo">
+        </div>
+        <ul>
+            <li>
+                <a href="#" id="krishiBazarLink"><i class="bi bi-shop"></i> Krishi Bazar</a>
+                <ul class="submenu" id="krishiBazarSubmenu">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Farmer" class="submenu-item"><i class="bi bi-person"></i> Farmer</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Driver" class="submenu-item"><i class="bi bi-truck"></i> Driver</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Seller" class="submenu-item"><i class="bi bi-shop"></i> Seller</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Buyer" class="submenu-item"><i class="bi bi-basket"></i> Buyer</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" id="krishiPostsLink"><i class="bi bi-file-post"></i> Krishi Posts</a>
+                <ul class="submenu" id="krishiPostsSubmenu">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Famer_Posts" class="submenu-item"><i class="bi bi-person"></i> Farmer Posts</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Driver_Posts" class="submenu-item"><i class="bi bi-truck"></i> Driver Posts</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Seller_Posts" class="submenu-item"><i class="bi bi-shop"></i> Seller Posts</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Buyer_Posts" class="submenu-item"><i class="bi bi-basket"></i> Buyer Posts</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Weather"><i class="bi bi-cloud-sun"></i> Weather</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Header -->
+        <div class="header d-flex justify-content-between align-items-center p-2 bg-light">
+            <div>
+                <h5 class="p-1 ms-auto mt-1" style="color:limegreen; font-weight: bold;">Profile Information</h5>
+            </div>
+
+            <!-- Logout Button (Right) -->
+            <div class="p-2 ms-auto">
+                <a class="dropdown-item logout-item text-black" href="#" onclick="openLogoutModal()">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <a href="/Home/Logout" class="btn btn-danger">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile-card">
+
+            <!-- Profile Image -->
+            <div class="d-flex align-items-center mb-2">
+                <img src="/image/user.jpg" alt="Profile" class="profile-image">
+                <div class="ms-3 mt-3">
+                    <button class="btn btn-success btn-sm">Select</button>
+                    <button class="btn btn-outline-danger btn-sm">Remove</button>
+                    <p class="text-muted small">Allowed JPG, GIF, PNG. Max 800K</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="row mb-2">
+                    <div class="col">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" value="Ritish">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control" value="Ritish@gmail.com">
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col">
+                        <label class="form-label">Mobile</label>
+                        <input type="text" class="form-control" value="0987654323">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" value="mypassword">
+                            <button class="btn btn-outline-dark border" type="button" id="togglePassword">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Address</label>
+                    <textarea class="form-control">OIF HSAOI DOISA JDOSABFIWHBFIDSF DSAJO FAOIFJOISA JFOISAFIUENFOSA FOISA JFF</textarea>
+                </div>
+
+
+                <!-- Business Type -->
+<div class="mb-2">
+    <!-- Profession Checkboxes -->
+    <label class="form-label">Profession</label>
+    <div class="border p-2 rounded">
+        <div class="form-check">
+            <input class="form-check-input custom-checkbox" type="checkbox" id="farmer" checked>
+            <label class="form-check-label" for="farmer">
+                <img src="/image/tea.png" alt="Farmer" width="20" height="20">
+                Farmer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input custom-checkbox" type="checkbox" id="driver" checked>
+            <label class="form-check-label" for="driver">
+                <img src="/image/bus-driver.png" alt="Driver" width="20" height="20">
+                Driver
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input custom-checkbox" type="checkbox" id="buyer" checked>
+            <label class="form-check-label" for="buyer">
+                <img src="/image/buyer (1).png" alt="Buyer" width="20" height="20">
+                Buyer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input custom-checkbox" type="checkbox" id="seller" checked>
+            <label class="form-check-label" for="seller">
+                <img src="/image/seller.png" alt="Seller" width="20" height="20">
+                Seller
+            </label>
+        </div>
+    </div>
+</div>
+                <div class="mt-1">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-outline-danger">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to toggle submenus
+            function toggleSubMenu(mainLinkId, submenuId) {
+                const mainLink = document.getElementById(mainLinkId);
+                const submenu = document.getElementById(submenuId);
+
+                if (mainLink && submenu) {
+                    if (localStorage.getItem(submenuId) === "open") {
+                        submenu.classList.add("show");
+                    }
+
+                    mainLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        submenu.classList.toggle("show");
+
+                        if (submenu.classList.contains("show")) {
+                            localStorage.setItem(submenuId, "open");
+                        } else {
+                            localStorage.removeItem(submenuId);
+                        }
+                    });
+                }
+            }
+
+            // Function to handle active menu highlighting
+            function handleActiveMenu() {
+                const sidebarLinks = document.querySelectorAll(".sidebar a");
+                const submenuLinks = document.querySelectorAll(".submenu a");
+
+                function clearActiveClasses() {
+                    sidebarLinks.forEach(link => link.classList.remove("active"));
+                }
+
+                const activeLink = localStorage.getItem("activeLink");
+                if (activeLink) {
+                    const activeElement = document.querySelector(`.sidebar a[href="${activeLink}"]`);
+                    if (activeElement) {
+                        activeElement.classList.add("active");
+
+                        const parentSubmenu = activeElement.closest(".submenu");
+                        if (parentSubmenu) {
+                            parentSubmenu.classList.add("show");
+                            localStorage.setItem(parentSubmenu.id, "open");
+                        }
+                    }
+                }
+
+                submenuLinks.forEach(link => {
+                    link.addEventListener("click", function () {
+                        clearActiveClasses();
+                        this.classList.add("active");
+                        localStorage.setItem("activeLink", this.getAttribute("href"));
+                    });
+                });
+
+                // Ensure main menus are not highlighted when a submenu item is clicked
+                const mainMenuLinks = document.querySelectorAll(".sidebar > ul > li > a");
+                mainMenuLinks.forEach(link => {
+                    link.addEventListener("click", function () {
+                        localStorage.removeItem("activeLink");
+                    });
+                });
+            }
+
+            // Initialize functions
+            toggleSubMenu("krishiBazarLink", "krishiBazarSubmenu");
+            toggleSubMenu("krishiPostsLink", "krishiPostsSubmenu");
+            handleActiveMenu();
+        });
+
+                function openLogoutModal() {
+            var logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
+            logoutModal.show();
+        }
+
+        document.getElementById("togglePassword").addEventListener("click", function () {
+            let passwordInput = document.getElementById("password");
+            let icon = this.querySelector("i");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+            }
+        });
+    </script>
+</body>

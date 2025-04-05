@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
 
+
 namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
@@ -13,7 +14,16 @@ namespace WebApplication1.Controllers
             _logger = logger;
         }
 
+        public IActionResult Profile()
+        {
+            return View();
+        }
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Register()
         {
             return View();
         }
@@ -42,6 +52,29 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public IActionResult Famer_Posts()
+        {
+            return View();
+        }
+
+        public IActionResult Driver_posts()
+        {
+            return View();
+        }
+
+        public IActionResult Seller_posts()
+        {
+            return View();
+        }
+
+        public IActionResult Buyer_posts()
+        {
+            return View();
+        }
+
+       
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
