@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "E:\\pra\\wwwroot\\css\\logout.css",
+      "PackagePath": "staticwebassets\\css\\logout.css"
+    },
+    {
       "Id": "E:\\pra\\wwwroot\\css\\posts_table.css",
       "PackagePath": "staticwebassets\\css\\posts_table.css"
     },

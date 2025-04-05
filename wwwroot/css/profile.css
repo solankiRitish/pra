@@ -315,4 +315,31 @@ body {
     border-color: limegreen !important;
 }
 
+.location-field {
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensure no overflow of content */
+}
 
+    .location-field .input-group-text {
+        background-color: #fff; /* White background for the icon */
+        border: none; /* Remove border for the icon span */
+    }
+
+    .location-field .form-control {
+        border: none; /* Remove borders for the input */
+        outline: none; /* Remove focus outline */
+        box-shadow: none; /* Remove box-shadow on focus */
+    }
+
+.fetch-location-btn {
+    background-color: #28a745; /* Green background for the button */
+    color: white; /* White text for the button */
+    border: none; /* Remove button border */
+}
+
+    .fetch-location-btn:hover {
+        background-color: #218838; /* Darker green on hover */
+        color: white;
+    }
+    }

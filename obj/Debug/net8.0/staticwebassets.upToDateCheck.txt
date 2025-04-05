@@ -1,5 +1,6 @@
 wwwroot\css\layout.css
 wwwroot\css\Login_OR_Register.css
+wwwroot\css\logout.css
 wwwroot\css\Main.css
 wwwroot\css\posts_table.css
 wwwroot\css\profile.css

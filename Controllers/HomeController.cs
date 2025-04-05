@@ -73,7 +73,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-       
+        public IActionResult Logout()
+        {
+           
+            return View("LogoutLoading");
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

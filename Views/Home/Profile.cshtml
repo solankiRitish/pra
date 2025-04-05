@@ -130,10 +130,33 @@
                     </div>
                 </div>
 
-                <div class="mb-2">
-                    <label class="form-label">Address</label>
-                    <textarea class="form-control">OIF HSAOI DOISA JDOSABFIWHBFIDSF DSAJO FAOIFJOISA JFOISAFIUENFOSA FOISA JFF</textarea>
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <label class="form-label">Address</label>
+                        <textarea class="form-control" rows="3">OIF HSAOI DOISA JDOSABFIWHBFIDSF DSAJO FAOIFJOISA JFOISAFIUENFOSA FOISA JFF</textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="locationInput" class="form-label">Location</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <img src="/image/location.png" height="20px" width="20px" alt="Location Icon">
+                            </span>
+                            <input type="text"
+                                   class="form-control"
+                                   name="location"
+                                   id="locationInput"
+                                   placeholder="Click the button to get location"
+                                   readonly>
+                            <button class="btn btn-outline-primary fetch-location-btn"
+                                    type="button"
+                                    onclick="fetchLocation()"
+                                    style="width: 60px">
+                                Get
+                            </button>
+                        </div>
+                    </div>
                 </div>
+
 
 
                 <!-- Business Type -->
@@ -271,5 +294,26 @@
                 icon.classList.add("bi-eye");
             }
         });
+
+         function fetchLocation() {
+            const locationInput = document.getElementById('locationInput');
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        locationInput.value = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                    },
+                    (error) => {
+                        locationInput.value = "Failed to get location.";
+                        alert("Error in fetching location. Please check your permissions.");
+                    }
+                );
+            } else {
+                locationInput.value = "Location not supported.";
+                alert("Your browser does not support location services.");
+            }
+        }
+
     </script>
 </body>
