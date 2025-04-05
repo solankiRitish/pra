@@ -1,4 +1,7 @@
-﻿/* General Card Styling */
+﻿body {
+    overflow: scroll;
+}
+/* General Card Styling */
 .card {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);

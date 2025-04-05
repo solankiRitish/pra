@@ -11,7 +11,7 @@
     <link href="/css/Main.css" rel="stylesheet" />
     <link href="/css/weather.css" rel="stylesheet" />
     <link href="/css/posts_table.css" rel="stylesheet" />
-    <link href="/css/Profile.css" rel="stylesheet" />
+    <link href="/css/profile.css" rel="stylesheet" />
     <link href="/css/layout.css" rel="stylesheet" />
 </head>
 <body>
@@ -58,7 +58,7 @@
                      style="width: 50px; height: 50px; cursor: pointer;"
                      data-bs-toggle="dropdown" aria-expanded="false">
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item profile-item" href="/Profile"><i class="bi bi-person-circle me-2"></i>Profile</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Profile" class="dropdown-item profile-item"><i class="bi bi-person-circle me-2"></i>Profile</a></li>
                     <li>
                         <a class="dropdown-item logout-item text-black" href="#" onclick="openLogoutModal()">
                             <i class="bi bi-box-arrow-right"></i> Logout
@@ -90,10 +90,12 @@
                     <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">Are you sure you want to log out?</div>
+                <div class="modal-body">
+                    Are you sure you want to logout?
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <a href="logout_loding.aspx" class="btn btn-outline-danger">Logout</a>
+                    <a href="/Home/Logout" class="btn btn-danger">Logout</a>
                 </div>
             </div>
         </div>
@@ -173,6 +175,11 @@
             toggleSubMenu("krishiPostsLink", "krishiPostsSubmenu");
             handleActiveMenu();
         });
+                function openLogoutModal() {
+            var logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
+            logoutModal.show();
+        }
+
     </script>
 
     @await RenderSectionAsync("Scripts", required: false)

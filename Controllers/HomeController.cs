@@ -14,7 +14,16 @@ namespace WebApplication1.Controllers
             _logger = logger;
         }
 
+        public IActionResult Profile()
+        {
+            return View();
+        }
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Register()
         {
             return View();
         }
@@ -64,7 +73,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-
+       
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

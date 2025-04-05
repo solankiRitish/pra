@@ -264,3 +264,4 @@ E:\pra\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pro
 E:\pra\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 E:\pra\obj\Debug\net8.0\WebApplication1.csproj.AssemblyReference.cache
 E:\pra\obj\Debug\net8.0\WebAppli.7D14BD69.Up2Date
+E:\pra\bin\Debug\net8.0\bundleconfig.json

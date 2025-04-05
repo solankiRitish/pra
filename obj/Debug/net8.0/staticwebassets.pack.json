@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\WebApplication1.1zwnydebup.bundle.scp.css"
     },
     {
+      "Id": "E:\\pra\\wwwroot\\css\\Login_OR_Register.css",
+      "PackagePath": "staticwebassets\\css\\Login_OR_Register.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\css\\Main.css",
+      "PackagePath": "staticwebassets\\css\\Main.css"
+    },
+    {
       "Id": "E:\\pra\\wwwroot\\css\\Table.css",
       "PackagePath": "staticwebassets\\css\\Table.css"
     },
@@ -19,6 +27,10 @@
     {
       "Id": "E:\\pra\\wwwroot\\css\\posts_table.css",
       "PackagePath": "staticwebassets\\css\\posts_table.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
       "Id": "E:\\pra\\wwwroot\\favicon.ico",
@@ -63,6 +75,10 @@
     {
       "Id": "E:\\pra\\wwwroot\\js\\Weather.js",
       "PackagePath": "staticwebassets\\js\\Weather.js"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -131,6 +147,22 @@
     {
       "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "E:\\pra\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",

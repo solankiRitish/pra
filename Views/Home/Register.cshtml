@@ -1,0 +1,153 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Register";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiSetu Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="/css/Login_OR_Register.css" rel="stylesheet" />
+    <script>
+        function fetchLocation() {
+            const locationInput = document.getElementById('locationInput');
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        locationInput.value = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                    },
+                    (error) => {
+                        locationInput.value = "Failed to get location.";
+                        alert("Error in fetching location. Please check your permissions.");
+                    }
+                );
+            } else {
+                locationInput.value = "Location not supported.";
+                alert("Your browser does not support location services.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container  content">
+        <img src="/image/main-logo.png" alt="Logo" style="width: 20rem; margin-bottom: 8px;" />
+        <div class="text-start">
+            <form method="post" enctype="multipart/form-data">
+                <!-- Name Field -->
+                <!-- Name & Email Row -->
+                <div class="row mb-2">
+                    <!-- Name Field -->
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="Name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="Email" class="form-control" placeholder="xxxx@xxx.xx" required>
+                    </div>
+                </div>
+
+                <!-- Mobile Number & Password Row -->
+                <div class="row mb-2">
+                    <!-- Mobile Number -->
+                    <div class="col-md-6">
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <input type="tel" id="mobile" name="Mobile" class="form-control" placeholder="+91 000 000 0000" required>
+                    </div>
+                    <!-- Password -->
+                    <div class="col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="Password" class="form-control" placeholder="********" required>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="mb-2">
+                    <label for="locationInput" class="form-label">Location</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <img src="/image/location.png" height="0px" width="20px" alt="Location Icon">
+                        </span>
+                        <input type="text"
+                               class="form-control"
+                               name="location"
+                               id="locationInput"
+                               placeholder="Click the button to get location"
+                               readonly>
+                        <button class="btn btn-outline-primary fetch-location-btn"
+                                type="button"
+                                onclick="fetchLocation()"
+                                style="width: 60px">
+                            Get
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <!-- Profession Checkboxes -->
+                    <label class="form-label">Profession</label>
+                    <div class="border p-2 rounded">
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="farmer">
+                            <label class="form-check-label" for="farmer">
+                                <img src="/image/tea.png" alt="Farmer" width="20" height="20">
+                                Farmer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="driver">
+                            <label class="form-check-label" for="driver">
+                                <img src="/image/bus-driver.png" alt="Driver" width="20" height="20">
+                                Driver
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="buyer">
+                            <label class="form-check-label" for="buyer">
+                                <img src="/image/buyer (1).png" alt="Buyer" width="20" height="20">
+                                Buyer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="seller">
+                            <label class="form-check-label" for="seller">
+                                <img src="/image/seller.png" alt="Seller" width="20" height="20">
+                                Seller
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom CSS -->
+                <style>
+                    /* Change checkbox color to green */
+                    .custom-checkbox:checked {
+                        background-color: limegreen !important;
+                        border-color: limegreen !important;
+                    }
+                </style>
+
+
+
+                <!-- Profile Picture -->
+                <div class="mb-2">
+                    <label for="profilePicture" class="form-label">Profile Picture</label>
+                    <input type="file" id="profilePicture" name="ProfilePicture" class="form-control">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+                <!-- Login Link -->
+                <a href="Login.aspx">Already have an account? Sign In</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

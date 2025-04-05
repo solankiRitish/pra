@@ -1,5 +1,8 @@
 wwwroot\css\layout.css
+wwwroot\css\Login_OR_Register.css
+wwwroot\css\Main.css
 wwwroot\css\posts_table.css
+wwwroot\css\profile.css
 wwwroot\css\Table.css
 wwwroot\css\Weather.css
 wwwroot\favicon.ico
@@ -12,6 +15,7 @@ wwwroot\image\main-logo.png
 wwwroot\image\seller.png
 wwwroot\image\tea.png
 wwwroot\image\user.jpg
+wwwroot\js\site.js
 wwwroot\js\Weather.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -37,6 +41,10 @@ wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
