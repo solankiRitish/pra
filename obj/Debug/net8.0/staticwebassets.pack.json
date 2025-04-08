@@ -41,12 +41,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\pra\\wwwroot\\image\\Cultivators.jpg",
+      "PackagePath": "staticwebassets\\image\\Cultivators.jpg"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\Rice.jpg",
+      "PackagePath": "staticwebassets\\image\\Rice.jpg"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\Wheat.jpg",
+      "PackagePath": "staticwebassets\\image\\Wheat.jpg"
+    },
+    {
       "Id": "E:\\pra\\wwwroot\\image\\bus-driver.png",
       "PackagePath": "staticwebassets\\image\\bus-driver.png"
     },
     {
       "Id": "E:\\pra\\wwwroot\\image\\buyer (1).png",
       "PackagePath": "staticwebassets\\image\\buyer (1).png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\download (2).jpg",
+      "PackagePath": "staticwebassets\\image\\download (2).jpg"
     },
     {
       "Id": "E:\\pra\\wwwroot\\image\\image(2).jpg",
@@ -65,8 +81,24 @@
       "PackagePath": "staticwebassets\\image\\main-logo.png"
     },
     {
+      "Id": "E:\\pra\\wwwroot\\image\\maize.jpg",
+      "PackagePath": "staticwebassets\\image\\maize.jpg"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\mango.jpg",
+      "PackagePath": "staticwebassets\\image\\mango.jpg"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\onion.jpg",
+      "PackagePath": "staticwebassets\\image\\onion.jpg"
+    },
+    {
       "Id": "E:\\pra\\wwwroot\\image\\seller.png",
       "PackagePath": "staticwebassets\\image\\seller.png"
+    },
+    {
+      "Id": "E:\\pra\\wwwroot\\image\\sugarcane.jpg",
+      "PackagePath": "staticwebassets\\image\\sugarcane.jpg"
     },
     {
       "Id": "E:\\pra\\wwwroot\\image\\tea.png",

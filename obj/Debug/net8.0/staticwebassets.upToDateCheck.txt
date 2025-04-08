@@ -9,13 +9,21 @@ wwwroot\css\Weather.css
 wwwroot\favicon.ico
 wwwroot\image\bus-driver.png
 wwwroot\image\buyer (1).png
+wwwroot\image\Cultivators.jpg
+wwwroot\image\download (2).jpg
 wwwroot\image\image(2).jpg
 wwwroot\image\images (1).jpg
 wwwroot\image\location.png
 wwwroot\image\main-logo.png
+wwwroot\image\maize.jpg
+wwwroot\image\mango.jpg
+wwwroot\image\onion.jpg
+wwwroot\image\Rice.jpg
 wwwroot\image\seller.png
+wwwroot\image\sugarcane.jpg
 wwwroot\image\tea.png
 wwwroot\image\user.jpg
+wwwroot\image\Wheat.jpg
 wwwroot\js\site.js
 wwwroot\js\Weather.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
